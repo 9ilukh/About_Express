@@ -1,0 +1,16 @@
+Express is a commonly used framework for building web applications in Node.js. It simplifies the process of building web applications by providing a set of features for handling HTTP requests, routing, middleware, and more. Here's an example of how to use the Express framework to create a basic web server:
+
+```
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+  console.log('Server started on port 3000');
+});
+```
+
+In this example, we import the Express framework, create a new instance of the `express` application, define a route for the root URL (`/`), and listen for incoming requests on port 3000. With this basic setup, we can build more complex web applications by defining additional routes and middleware functions, integrating with databases and external APIs, and more. Overall, Express provides a powerful and flexible foundation for building robust and scalable web applications in Node.js.
